@@ -24,6 +24,6 @@ jobs:
     - name: Local IP
       run: ipconfig
     - name: Server IP
-      run: nslookup myip.opendns.com. resolver1.opendns.com
+      run: curl "http://myexternalip.com/raw"
     - name: Start Minecraft Server
       run: java -jar spigot.jar 
