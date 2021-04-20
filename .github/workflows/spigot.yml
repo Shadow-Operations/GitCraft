@@ -22,6 +22,6 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Server IP
-      run: dig +short myip.opendns.com @resolver1.opendns.com
+      run: dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
     - name: Start Minecraft Server
       run: java -jar spigot.jar 
