@@ -1,0 +1,4 @@
+#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).
+#and also agreeing that tacos are tasty.
+#Mon Mar 15 16:38:41 PDT 2021
+eula=true
