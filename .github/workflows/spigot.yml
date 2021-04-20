@@ -21,7 +21,9 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Server IP
+    - name: Local IP
       run: ipconfig
+    - name: Server IP
+      run: nslookup myip.opendns.com. resolver1.opendns.com
     - name: Start Minecraft Server
       run: java -jar spigot.jar 
