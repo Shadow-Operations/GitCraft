@@ -1,0 +1,218 @@
+# The global kick message. Players will see this message when kicked.
+# Valid parameters:
+# - %check%
+global-kick-message: '&cYou have been kicked for %check%'
+global-kick-delay: 0
+global-violations-kick-message: '%prefix% &9%player%&f will be kicked for &c%check%&f
+  in &c%time%&f seconds.'
+global-ban-message: '&cYou have been banned for %check%'
+global-ban-delay: 0
+global-ban-type: NAME
+global-ban-length-type: DAYS
+global-ban-length: 30
+global-broadcast-ban: false
+global-broadcast-ban-message: '%prefix% &c%player% was banned for %check% for %time%
+  %type%'
+global-violations-ban-message: '%prefix% &9%player%&f will be banned for &c%check%&f
+  in &c%time%&f seconds.'
+enable-check-timings: true
+enabled-tps-helper: true
+tps-helper-limit: 17
+violation-notify-message: '%prefix% &9%player%&f has violated check &c%check%&8(&c%level%&8)&7'
+arc-command-no-permission-message: Unknown command. Type /help for help.
+arc-prefix: '&8[&cArc&8]'
+violation-data-timeout: 30
+enable-event-api: true
+enable-tps-helper: true
+Criticals:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  minimum-distance-allowed: 0.099
+  max-no-movement-allowed: 3
+  max-similar-movement-allowed: 3
+  min-similar-movement-difference: 0.05
+MorePackets:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: true
+  ban-level: 20
+  kick: false
+  kick-level: 0
+  max-flying-packets-per-second: 25
+  max-position-packets-per-second: 25
+  max-look-packets-per-second: 25
+  kick-if-threshold-reached: true
+  packet-kick-threshold: 50
+NoFall:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  expected-fall-distance-tolerance: 1.0
+  invalid-ground-moves-allowed: 50
+PayloadFrequency:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: true
+  ban-level: 5
+  kick: true
+  kick-level: 2
+  max-packet-size-books: 4096
+  max-packet-size-others: 32767
+  check-interval-milliseconds: 500
+  max-packets-per-interval: 1
+  max-packet-size-kick: true
+  max-packets-per-interval-kick: true
+  channels:
+  - MC|BSign
+  - MC|BEdit
+SwingFrequency:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: true
+  ban-level: 10
+  kick: true
+  kick-level: 5
+  max-packets-per-second: 50
+  kick-if-threshold-reached: false
+  packet-kick-threshold: 100
+Regeneration:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  regeneration-time-ms: 3400
+FastUse:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  fastbow:
+    use-delta-min: 100
+    delta-shot-min: 200
+  fastconsume:
+    consume-time-ms: 1400
+Jesus:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  time-in-liquid-required: 3
+  max-setback-distance: 2
+  time-ascending-required: 1
+  time-in-liquid-required-distance-checking: 3
+  max-no-distance-change-allowed: 3
+  ascending-min-distance-required: 0.12
+  ascending-min-difference-distance: 0.05
+Reach:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  max-survival-distance: 4.0
+  max-creative-distance: 6.5
+  ignore-vertical-axis: true
+  subtract-eye-height: true
+  default-eye-height: 1.75
+  subtract-player-velocity: true
+  subtract-entity-velocity: true
+NoSwing:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  swing-time: 100
+KillAura:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  direction:
+    max-yaw-difference: 75
+    max-pitch-difference: 75
+Flight:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  boatfly:
+    boat-fly-min-descending-time: 5
+    boat-fly-min-ascending-time: 5
+    boat-fly-min-diff: 0.038
+    boat-fly-max-ascend: 0.0
+    boat-fly-max-setback-distance: 1
+Speed:
+  enabled: true
+  cancel: true
+  cancel-level: 0
+  notify: true
+  notify-every: 1
+  ban: false
+  ban-level: 0
+  kick: false
+  kick-level: 0
+  base-move-speed-sprinting: 0.2873
+  base-move-speed-walking: 0.2166
+  base-move-speed-sneaking: 0.0666
+  cancel-large-movements: true
+  large-movements: 3
+  teleport-cooldown-ms: 500
+  ice-slipperiness: 0.98
+  sneak-time-delay-ice: 20
+  sneak-time-delay: 15
