@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    -name: Port Forward
+    - name: Port Forward
       run: netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=25564 connectaddress=192.168.0.1 connectport=25565
     - name: Local IP
       run: ipconfig
